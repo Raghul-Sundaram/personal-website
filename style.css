@@ -415,3 +415,8 @@ button:hover{
     from, to { border-color: transparent }
     50% { border-color: orange }
   }
+  #text{
+    font-size: 25px;
+    width: 500px;
+    color: rgb(192, 185, 185);
+  }

@@ -1,6 +1,20 @@
 var btn=document.getElementById('mode');
 btn.addEventListener('click',modechange)
 
+var i = 0;
+var txt = " 'I am just a child who has never grown up. I still keep asking these 'how' and 'why' questions. Occasionally, I find an answer.' - Stephen Hawking";
+var speed = 50;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("text").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+} 
+typeWriter();
+
+
 function modechange(){
     document.querySelector('body').classList.toggle('dark');
     document.querySelector('button').classList.toggle('dark-btn');
